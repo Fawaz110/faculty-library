@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faculty Library</title>
+  <meta name="description" content="Faculty Library: books, online resources and academic support for students and staff.">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-bar">
+      <a class="brand" href="#home"><img src="assets/images/logo.svg" alt="" width="36" height="36"><span>Faculty Library</span></a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+      <label class="nav-burger" for="nav-toggle" aria-hidden="true"><span></span></label>
+      <div class="header-panel">
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a class="nav-link" href="#home" aria-current="page">Home</a></li>
+            <li><a class="nav-link" href="#books">Books</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <form class="search-form" role="search" action="#">
+          <label class="visually-hidden" for="site-search">Search the library</label>
+          <input id="site-search" type="search" name="q" placeholder="Search books...">
+        </form>
+        <a class="btn btn--accent" href="#login">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <!-- <img class="hero__media" src="assets/images/hero-library.webp" alt="Warm lit library shelves filled with books" width="1600" height="700"> -->
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__kicker">Welcome to the</p>
+          <h1 id="hero-title">Faculty <span class="text-accent">Library</span></h1>
+          <p class="hero__text">Discover thousands of books, journals and digital resources curated for our students, researchers and teaching staff.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="services" aria-labelledby="services-title">
+      <h2 class="section__title" id="services-title">Our Services</h2>
+      <div class="services-grid">
+        <article class="card service-card">
+          <span class="icon-badge icon-badge--green"><img src="assets/icons/icon-book.svg" alt="" width="26" height="26"></span>
+          <h3>Book Collection</h3>
+          <p>Browse textbooks, references and research titles across every faculty program.</p>
+          <a class="btn btn--primary" href="#books">Browse books</a>
+        </article>
+        <article class="card service-card">
+          <span class="icon-badge icon-badge--gold"><img src="assets/icons/icon-globe.svg" alt="" width="26" height="26"></span>
+          <h3>Online Resources</h3>
+          <p>Access e-books, journals and databases from campus or from home.</p>
+          <a class="btn btn--primary" href="#services">Open resources</a>
+        </article>
+        <article class="card service-card">
+          <span class="icon-badge icon-badge--sage"><img src="assets/icons/icon-cap.svg" alt="" width="26" height="26"></span>
+          <h3>Academic Support</h3>
+          <p>Get help with citations, research methods and thesis formatting from our librarians.</p>
+          <a class="btn btn--primary" href="#contact">Ask a librarian</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="about" aria-labelledby="summary-title">
+      <article class="card summary">
+        <header class="summary__head">
+          <h2 id="summary-title">Sales Summary</h2>
+          <form class="summary__filter" action="#">
+            <label class="visually-hidden" for="period">Time period</label>
+            <select id="period" name="period">
+              <option>Monthly</option>
+              <option>Weekly</option>
+              <option>Yearly</option>
+            </select>
+          </form>
+        </header>
+        <div class="summary__body">
+          <div class="summary__stats">
+            <span class="icon-badge icon-badge--green"><img src="assets/icons/icon-cart.svg" alt="" width="26" height="26"></span>
+            <p class="summary__total">$24,750</p>
+            <p class="summary__growth"><span class="growth-badge">+12.5%</span> vs last month</p>
+            <p class="summary__label">Total Sales This Month</p>
+          </div>
+          <figure class="chart">
+            <figcaption class="visually-hidden">Weekly sales, Monday to Sunday. Friday is the highest day.</figcaption>
+            <ol class="chart__bars">
+              <li class="chart__bar chart__bar--mon"><span class="chart__track"><span class="chart__fill"></span></span><span class="chart__day">Mon</span></li>
+              <li class="chart__bar chart__bar--tue"><span class="chart__track"><span class="chart__fill"></span></span><span class="chart__day">Tue</span></li>
+              <li class="chart__bar chart__bar--wed"><span class="chart__track"><span class="chart__fill"></span></span><span class="chart__day">Wed</span></li>
+              <li class="chart__bar chart__bar--thu"><span class="chart__track"><span class="chart__fill"></span></span><span class="chart__day">Thu</span></li>
+              <li class="chart__bar chart__bar--fri chart__bar--peak"><span class="chart__track"><span class="chart__fill"></span></span><span class="chart__day">Fri</span></li>
+              <li class="chart__bar chart__bar--sat"><span class="chart__track"><span class="chart__fill"></span></span><span class="chart__day">Sat</span></li>
+              <li class="chart__bar chart__bar--sun"><span class="chart__track"><span class="chart__fill"></span></span><span class="chart__day">Sun</span></li>
+            </ol>
+          </figure>
+        </div>
+      </article>
+    </section>
+
+    <section class="section container" id="books" aria-labelledby="sales-title">
+      <h2 class="section__title" id="sales-title">Recent Sales</h2>
+      <div class="card table-wrap" tabindex="0" role="region" aria-labelledby="sales-title">
+        <table class="sales-table">
+          <thead>
+            <tr>
+              <th scope="col"><span class="visually-hidden">Cover</span></th>
+              <th scope="col">Book Title</th>
+              <th scope="col">Author</th>
+              <th scope="col">Year</th>
+              <th scope="col">Sold At</th>
+              <th scope="col">Price</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><img class="thumb" src="assets/images/books/book-1.svg" alt="Clean Code cover" width="40" height="54"></td><th scope="row">Clean Code</th><td>Robert C. Martin</td><td>2008</td><td>Main Desk</td><td>$29.99</td><td><span class="badge badge--done">Completed</span></td></tr>
+            <tr><td><img class="thumb" src="assets/images/books/book-2.svg" alt="Design Patterns cover" width="40" height="54"></td><th scope="row">Design Patterns</th><td>Erich Gamma</td><td>1994</td><td>Main Desk</td><td>$39.99</td><td><span class="badge badge--done">Completed</span></td></tr>
+            <tr><td><img class="thumb" src="assets/images/books/book-3.svg" alt="The Pragmatic Programmer cover" width="40" height="54"></td><th scope="row">The Pragmatic Programmer</th><td>Andrew Hunt</td><td>1999</td><td>Online Store</td><td>$34.99</td><td><span class="badge badge--pending">Pending</span></td></tr>
+            <tr><td><img class="thumb" src="assets/images/books/book-4.svg" alt="Clean Architecture cover" width="40" height="54"></td><th scope="row">Clean Architecture</th><td>Robert C. Martin</td><td>2017</td><td>Online Store</td><td>$44.99</td><td><span class="badge badge--done">Completed</span></td></tr>
+            <tr><td><img class="thumb" src="assets/images/books/book-5.svg" alt="Refactoring cover" width="40" height="54"></td><th scope="row">Refactoring</th><td>Martin Fowler</td><td>1999</td><td>Main Desk</td><td>$32.99</td><td><span class="badge badge--done">Completed</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <a class="brand" href="#home"><img src="assets/images/logo.svg" alt="" width="36" height="36"><span>Faculty Library</span></a>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li>
+          <a href="#" aria-label="Facebook"><img src="assets/icons/social-facebook.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="#" aria-label="LinkedIn"><img src="assets/icons/social-linkedin.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="#" aria-label="Instagram"><img src="assets/icons/social-instagram.svg" alt="" width="20" height="20"></a></li>
+      </ul>
+    </div>
+    <p class="container footer-copy">&copy; 2026 Faculty Library. All rights reserved.</p>
+  </footer>
+</body>
+</html>
